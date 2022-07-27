@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: white;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 1vw;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar nav {
+  position: absolute;
+  display: block;
+  height: 1080px;
+  margin-top: -50px;
+  margin-left: 79vw;
+  z-index: 1;
+  text-align: center;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+.navbar nav img {
+  position: relative;
+  width: 18vw;
+  height: 13vw;
+  z-index: 3;
+  padding-bottom: 1vw;
+}
+
+.navbar nav .exit-menu {
+  float: right;
+  width: 3vw;
+  height: 3vw;
+  margin-top: 1vw;
+  margin-right: 2vw;
+}
+
+.navbar nav .home-mari-face, .navbar nav .hobbies-mari-face, .navbar nav .family-kami-face, .navbar nav .contact-me-kami-face {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  margin-left: -17.5vw;
+  margin-top: 4vw;
+  z-index: 2;
+}
+
+.navbar nav ul {
+  list-style: none;
+  padding-top: 4vw;
+  padding-right: 3vw;
+}
+
+.navbar nav p {
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  font-size: 2.3vw;
+  color: white;
+  margin-top: -8.8vw;
+  margin-left: 2.5vw;
+  z-index: 4;
+}
+
+.navbar nav .home-text, .navbar nav .family-text, .navbar nav .hobbies-text {
+  margin-left: 4.4vw;
+}
+
+.navbar .container {
+  padding: 1em;
+  margin-left: 10em;
+}
+
+.navbar .home-icon {
+  float: right;
+  width: 15vw;
+  height: 10vw;
+  cursor: pointer;
+}
+
+p:hover {
+  font-weight: bold;
+}
+
+.home-mari-face {
+  -webkit-animation: popout;
+          animation: popout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.hobbies-mari-face {
+  -webkit-animation: popout;
+          animation: popout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.family-kami-face {
+  -webkit-animation: popout;
+          animation: popout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.contact-me-kami-face {
+  -webkit-animation: popout;
+          animation: popout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+}
+
+.main .left-col .main-img {
+  border-radius: 50%;
+  border: 1.5px solid black;
+  width: 35vw;
+  height: 35vw;
+}
+
+.main .right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vw;
+  margin-left: 1vw;
+}
+
+.main .right-col img {
+  width: 4vw;
+  height: 4vw;
+  opacity: 0;
+  -webkit-animation: fadeIn, fadeOut;
+          animation: fadeIn, fadeOut;
+  -webkit-animation-duration: 9s, 9s;
+          animation-duration: 9s, 9s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.main .right-col .first-black-pawprint {
+  margin-top: 19vw;
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+  -webkit-animation-delay: 0s, 3s;
+          animation-delay: 0s, 3s;
+}
+
+.main .right-col .second-black-pawprint {
+  margin-top: 22vw;
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+  -webkit-animation-delay: 0.5s, 3.5s;
+          animation-delay: 0.5s, 3.5s;
+}
+
+.main .right-col .third-black-pawprint {
+  margin-top: 18vw;
+  -webkit-transform: rotate(95deg);
+          transform: rotate(95deg);
+  -webkit-animation-delay: 1s, 4s;
+          animation-delay: 1s, 4s;
+}
+
+.main .right-col .fourth-black-pawprint {
+  margin-top: 21vw;
+  -webkit-transform: rotate(85deg);
+          transform: rotate(85deg);
+  -webkit-animation-delay: 1.5s, 4.5s;
+          animation-delay: 1.5s, 4.5s;
+}
+
+.main .right-col .fifth-black-pawprint {
+  margin-top: 17vw;
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+  -webkit-animation-delay: 2s, 5s;
+          animation-delay: 2s, 5s;
+}
+
+.main .right-col .sixth-black-pawprint {
+  margin-top: 19.5vw;
+  margin-left: 1vw;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+  -webkit-animation-delay: 2.5s, 5.5s;
+          animation-delay: 2.5s, 5.5s;
+}
+
+.main .right-col .seventh-black-pawprint {
+  margin-top: 14vw;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  -webkit-animation-delay: 3s, 6s;
+          animation-delay: 3s, 6s;
+}
+
+.main .right-col .eighth-black-pawprint {
+  margin-top: 15vw;
+  margin-left: 2vw;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  -webkit-animation-delay: 3.5s, 6.5s;
+          animation-delay: 3.5s, 6.5s;
+}
+
+.main .right-col .nineth-black-pawprint {
+  margin-top: 9vw;
+  margin-left: -1vw;
+  -webkit-transform: rotate(55deg);
+          transform: rotate(55deg);
+  -webkit-animation-delay: 4s, 7s;
+          animation-delay: 4s, 7s;
+}
+
+.main .right-col .tenth-black-pawprint {
+  margin-top: 10vw;
+  margin-left: 1vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-delay: 4.5s, 7.5s;
+          animation-delay: 4.5s, 7.5s;
+}
+
+.text {
+  text-align: center;
+  font-size: 3vw;
+  margin-top: -3vw;
+}
+
+.text span {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.text .Bo, .text .sung {
+  -webkit-animation: text-color;
+          animation: text-color;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.text .Hwang {
+  -webkit-animation: text-color2;
+          animation: text-color2;
+  -webkit-animation-duration: 43s;
+          animation-duration: 43s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.pink-pawprint {
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  margin-top: -44vw;
+  margin-left: 45vw;
+  -webkit-animation: rotate;
+          animation: rotate;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.green-pawprint {
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  margin-top: -8vw;
+  margin-left: 2vw;
+  -webkit-animation: rotate;
+          animation: rotate;
+  -webkit-animation-duration: 2.3s;
+          animation-duration: 2.3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.yellow-pawprint {
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  margin-left: 85vw;
+  margin-top: -18vw;
+  -webkit-animation: rotate;
+          animation: rotate;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.blue-pawprint {
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: 12vw;
+  -webkit-animation: rotate;
+          animation: rotate;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.gray-pawprint {
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  margin-left: 30vw;
+  margin-top: 5vw;
+  -webkit-animation: rotate;
+          animation: rotate;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.kami {
+  width: 18vw;
+  height: 25vw;
+  position: absolute;
+  margin-top: -2vw;
+  margin-left: 5vw;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.mari {
+  width: 15vw;
+  height: 25vw;
+  position: absolute;
+  margin-left: 78vw;
+  margin-top: -2vw;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+}
+
+@-webkit-keyframes text-color {
+  0% {
+    color: #E38989;
+  }
+  25% {
+    color: #179B83;
+  }
+  50% {
+    color: #979797;
+  }
+  75% {
+    color: #E5E060;
+  }
+  100% {
+    color: #0A1E68;
+  }
+}
+
+@keyframes text-color {
+  0% {
+    color: #E38989;
+  }
+  25% {
+    color: #179B83;
+  }
+  50% {
+    color: #979797;
+  }
+  75% {
+    color: #E5E060;
+  }
+  100% {
+    color: #0A1E68;
+  }
+}
+
+@-webkit-keyframes text-color2 {
+  0% {
+    color: #E5E060;
+  }
+  25% {
+    color: #E38989;
+  }
+  50% {
+    color: #0A1E68;
+  }
+  75% {
+    color: #979797;
+  }
+  100% {
+    color: #179B83;
+  }
+}
+
+@keyframes text-color2 {
+  0% {
+    color: #E5E060;
+  }
+  25% {
+    color: #E38989;
+  }
+  50% {
+    color: #0A1E68;
+  }
+  75% {
+    color: #979797;
+  }
+  100% {
+    color: #179B83;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes popout {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+  }
+}
+
+@keyframes popout {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+  }
+}
+/*# sourceMappingURL=main.css.map */

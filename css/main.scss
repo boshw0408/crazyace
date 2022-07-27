@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: white;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 1vw;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar{
+
+    nav{
+        position: absolute;
+        display: block;
+        height: 1080px;
+        margin-top: -50px;
+        margin-left: 79vw;
+        z-index: 1;
+        text-align: center;
+        backdrop-filter: blur(0.5rem);
+        //display: none;
+        img{
+            position: relative;
+            width: 18vw;
+            height: 13vw;
+            z-index: 3;
+            padding-bottom: 1vw;
+        }
+        .exit-menu{
+            float: right;
+            width: 3vw;
+            height: 3vw;
+            margin-top: 1vw;
+            margin-right: 2vw;
+        }
+        .home-mari-face, .hobbies-mari-face, .family-kami-face, .contact-me-kami-face{
+            position: absolute;
+            width: 4vw;
+            height: 4vw;
+            margin-left: -17.5vw;
+            margin-top: 4vw;
+            z-index: 2;
+            
+        }
+        ul{
+            list-style: none;
+            padding-top: 4vw;
+            padding-right: 3vw;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            font-size: 2.3vw;
+            color: white;
+            margin-top: -8.8vw;
+            margin-left: 2.5vw;
+            z-index: 4;
+        }
+
+        .home-text, .family-text, .hobbies-text{
+            margin-left: 4.4vw;
+            
+        }
+    }
+
+    .container{
+        padding: 1em;
+        margin-left: 10em;
+    }
+    .home-icon{
+        float: right;
+        width: 15vw;
+        height: 10vw;
+        cursor: pointer;
+    }    
+}
+
+p{
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+.home-mari-face{
+    animation: popout;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.hobbies-mari-face{
+    animation: popout;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.family-kami-face{
+    animation: popout;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.contact-me-kami-face{
+    animation: popout;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.main{
+    display: flex;    
+    padding: 1em;
+   .left-col{
+        .main-img{
+            border-radius: 50%;
+            border: 1.5px solid black;
+            width: 35vw;
+            height: 35vw;
+        }
+   }
+   .right-col{
+        display: flex;
+        gap: 1vw;
+        margin-left: 1vw;
+        img{
+            width: 4vw;
+            height: 4vw;
+            opacity: 0;
+            animation: fadeIn, fadeOut;
+            animation-duration: 9s, 9s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+        .first-black-pawprint{
+            margin-top: 19vw;
+            transform: rotate(105deg);
+            animation-delay: 0s, 3s;
+        }
+        .second-black-pawprint{
+            margin-top: 22vw;
+            transform: rotate(100deg);
+            animation-delay: 0.5s, 3.5s;
+        }
+        .third-black-pawprint{
+            margin-top: 18vw;
+            transform: rotate(95deg);
+            animation-delay: 1s, 4s;
+        }
+        .fourth-black-pawprint{
+            margin-top: 21vw;
+            transform: rotate(85deg);
+            animation-delay: 1.5s, 4.5s;
+        }
+        .fifth-black-pawprint{
+            margin-top: 17vw;
+            transform: rotate(75deg);
+            animation-delay: 2s, 5s;
+        }
+        .sixth-black-pawprint{
+            margin-top: 19.5vw;
+            margin-left: 1vw;
+            transform: rotate(65deg);
+            animation-delay: 2.5s, 5.5s;  
+        }
+        .seventh-black-pawprint{
+            margin-top: 14vw;
+            transform: rotate(60deg);
+            animation-delay: 3s, 6s;
+        }
+        .eighth-black-pawprint{
+            margin-top: 15vw;
+            margin-left: 2vw;
+            transform: rotate(60deg);
+            animation-delay: 3.5s, 6.5s;
+        }
+        .nineth-black-pawprint{
+            margin-top: 9vw;
+            margin-left: -1vw;
+            transform: rotate(55deg);
+            animation-delay: 4s, 7s;
+        }
+        .tenth-black-pawprint{
+            margin-top: 10vw;
+            margin-left: 1vw;
+            transform: rotate(45deg);
+            animation-delay: 4.5s, 7.5s;
+        }
+   }     
+}
+
+.text{
+    text-align: center;
+    font-size: 3vw;
+    margin-top: -3vw;
+
+    span{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+
+    .Bo, .sung{
+        animation: text-color;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .Hwang{
+        animation: text-color2;
+        animation-duration: 43s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+.pink-pawprint{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    margin-top: -44vw;
+    margin-left: 45vw;
+    animation: rotate;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.green-pawprint{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    margin-top: -8vw;
+    margin-left: 2vw;
+    animation: rotate;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.yellow-pawprint{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    margin-left: 85vw;
+    margin-top: -18vw;
+    animation: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.blue-pawprint{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    margin-left: 60vw;
+    margin-top: 12vw;
+    animation: rotate;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.gray-pawprint{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: 5vw;
+    animation: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.kami{
+    width: 18vw;
+    height: 25vw;
+    position: absolute;
+    margin-top: -2vw;
+    margin-left: 5vw;
+    transform: rotate(-10deg);
+}
+
+.mari{
+    width: 15vw;
+    height: 25vw;
+    position: absolute;
+    margin-left: 78vw;
+    margin-top: -2vw;
+    transform: rotate(10deg);
+}
+
+@keyframes rotate{
+    0% {transform: rotate(-25deg);}
+    100% {transform: rotate(25deg);}
+}
+
+@keyframes text-color{
+    0% {color: #E38989;}
+    25% {color: #179B83;}
+    50% {color: #979797;}
+    75% {color: #E5E060;}
+    100% {color: #0A1E68;}
+}
+
+@keyframes text-color2{
+    0% {color: #E5E060;}
+    25% {color: #E38989;}
+    50% {color: #0A1E68;}
+    75% {color: #979797;}
+    100% {color: #179B83;}   
+}
+
+@keyframes fadeIn {
+    10% {opacity: 1};
+    100% {opacity: 1};
+  }
+
+ @keyframes fadeOut {
+    25% {opacity: 0};
+    100% {opacity: 0};
+  }
+
+@keyframes popout{
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-55px);}
+}
+
+
+
+
+
+
+
+
+
